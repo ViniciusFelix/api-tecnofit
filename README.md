@@ -1,7 +1,7 @@
-O que é este projeto?
+## O que é este projeto?
 O projeto teste para empresa TecnoFit.
 
-Para rodar este projeto
+## Para rodar este projeto
 $ git clone https://github.com/ViniciusFelix/api-tecnofit
 $ cd api-tecnofit
 $ composer install
@@ -12,7 +12,7 @@ $ php artisan db:seed #para gerar os seeders, dados de teste
 $ php artisan serve
 Acesssar pela url: http://127.0.0.1:8000/api/ranking/{idMoviment}
 
-Pré-requisitos
+## Pré-requisitos
 PHP >= 5.5.9
 Laravel >= 4.2
 PDO PHP Extension
