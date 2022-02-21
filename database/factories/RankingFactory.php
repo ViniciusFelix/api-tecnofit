@@ -34,14 +34,14 @@ class RankingFactory extends Factory
                 m.name as movimento
             from tecnofit.personal_record pr 
             join tecnofit.moviments m 
-              on m.id = pr.movement_id 
+              on m.id = pr.moviment_id 
             where pr.value = (
             select max(pr2.value)
              from tecnofit.personal_record pr2 
              where pr2.user_id = {$idUser}
-               and pr2.movement_id = {$idMoviment})
+               and pr2.moviment_id = {$idMoviment})
             and pr.user_id = {$idUser}
-            and pr.movement_id = {$idMoviment}
+            and pr.moviment_id = {$idMoviment}
             order by pr.`date` desc
         ";
         
